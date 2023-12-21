@@ -9,5 +9,13 @@ int main()
 
         puts(str);
 
-        return 0;
+        return (0);
+}
+
+int void()
+{
+    int digit = 45;
+    printf("%d", digit);
+
+    return (0);
 }
