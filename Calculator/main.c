@@ -16,7 +16,7 @@ int calculator(int num1, int num2, char operaration){
 
 int main(){
     int num1, num2;
-    char opearation;
+    char opearation, loop;
     int continuety = 1;
 
     while (continuety){
@@ -31,6 +31,14 @@ int main(){
     
 
     printf("The result is %d", result);
+    printf("\nDo you want keep calculating?(y/n): ");
+    scanf(" %c", &loop);
+    if (loop == 'y') continue;
+    else if (loop == 'n') break;
+    else{
+        printf("Invalid command");
+        break;
+    }
     }
     
 
