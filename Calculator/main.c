@@ -8,9 +8,16 @@ int calculator(int num1, int num2, char operaration){
     } else if (operaration == '*'){
         return  num1 * num2;
     } else if(operaration == '/'){
-        return num1/num2;
+        if (num2 != 0){
+            return num1/num2;
+        }else{
+            printf("Error devisoin by zero\n");
+            return 0;
+        }
+        
     }else{
         printf("Invalid operation");
+        return 0;
     }
 }
 
