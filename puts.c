@@ -12,8 +12,7 @@ int main()
         return (0);
 }
 
-int void()
-{
+int digit(){
     int digit = 45;
     printf("%d", digit);
 
